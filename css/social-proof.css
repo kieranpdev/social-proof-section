@@ -1,0 +1,63 @@
+/* Base Layout Styles --------------*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: .9375em; /* 15px */
+    hyphens: auto; /* browser chooses hyphenation rules to avoid overflow - useful for mobile devices */
+}
+
+img {
+    width: 100%;
+}
+
+/* Mobile First Styles -------------*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+    padding: 0 2em;
+}
+
+h1,
+.ratings p {
+    color: hsl(300, 43%, 22%);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+
+.intro p {
+    font-size: 1.39rem;
+    color: hsl(303, 10%, 53%);
+}
+
+.ratings p{
+    padding: 1rem 0;
+    border-radius: .5em;
+    background: hsl(300, 24%, 96%);
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+}
+
+.ratings p::before {
+    content: 
+    url(../images/icon-star.svg) " " 
+    url(../images/icon-star.svg) " " 
+    url(../images/icon-star.svg) " " 
+    url(../images/icon-star.svg) " " 
+    url(../images/icon-star.svg);
+    display: block;
+}
