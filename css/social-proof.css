@@ -12,19 +12,69 @@ img {
     width: 100%;
 }
 
+blockquote {
+    margin: 2.5rem 0 0 0;
+}
+
 /* Mobile First Styles -------------*/
+
+/* Layout */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'League Spartan', sans-serif;
-    text-align: center;
-    font-weight: 500;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    text-align: left;
 }
 
 .wrapper {
     flex: 1 0 auto;
     padding: 0 2em;
+}
+
+.ratings {
+    margin-bottom: 3rem;
+}
+
+.ratings p{
+    padding: 1rem 0;
+    border-radius: .5em;
+}
+
+.review {
+    padding: 2rem 1.5rem;
+    border-radius:0.7em;
+    margin-bottom: 1em;
+}
+
+.review img {
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    float: left;
+}
+
+.strap {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
+/* Colours & Fonts */
+body {
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    font-weight: 500;
 }
 
 h1,
@@ -34,8 +84,12 @@ h1,
 
 h1 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 2.5rem;
+}
+
+h2 {
+    text-align: left;
 }
 
 .intro p {
@@ -60,4 +114,18 @@ h1 {
     url(../images/icon-star.svg) " " 
     url(../images/icon-star.svg);
     display: block;
+}
+
+.review {
+    background:hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+}
+
+.strap {
+    color: hsl(333, 80%, 67%);
+    text-align: left;
+    font-size: 1.2rem;
 }
