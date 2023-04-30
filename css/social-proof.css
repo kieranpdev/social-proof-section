@@ -136,7 +136,7 @@ h1 {
 }
 
 /* Large screen Styles -------------*/
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     
     /* Layout */
 
