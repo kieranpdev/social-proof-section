@@ -136,7 +136,7 @@ h1 {
 }
 
 /* Large screen Styles -------------*/
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
     
     /* Layout */
 
@@ -145,7 +145,7 @@ h1 {
     }
 
     body {
-        padding: 10vw;
+        padding-top: 20vh;
         background: url(../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
         align-items: center;
     }
@@ -156,7 +156,6 @@ h1 {
     }
 
     main {
-        margin-bottom: 4rem;
         display: flex;
         justify-content: space-between;
     }
@@ -173,13 +172,11 @@ h1 {
     }
 
     .ratings p {
-        /* flex: 0; */
-        /* width: 30rem; */
         padding: 1rem;
     }
 
     .ratings > p:nth-child(1) {
-        align-self: flex-start;;
+        align-self: flex-start;
     }
 
     .ratings > p:nth-child(2) {
@@ -193,6 +190,29 @@ h1 {
     .ratings p::before {
         display: inline;
         margin-right: 2rem;
+    }
+
+    aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 20rem;
+    }
+
+    .review {
+        width: 32%;
+    }
+
+    .review:nth-child(2) {
+        align-self: center;
+    }
+
+    .review:nth-child(3) {
+        align-self: flex-end;
+    }
+
+    footer {
+        margin-top: 15vh;
     }
 
     /* Colours & Fonts */
